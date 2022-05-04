@@ -3,7 +3,7 @@ package com.example.addressbookapp1.controller;
 
 import com.example.addressbookapp1.dto.AddressBookDTO;
 import com.example.addressbookapp1.dto.ResponseDTO;
-import com.example.addressbookapp1.exception.AddresssBookException;
+import com.example.addressbookapp1.model.exception.AddresssBookException;
 import com.example.addressbookapp1.model.AddressBook;
 import com.example.addressbookapp1.service.IAddressBookService;
 import lombok.extern.slf4j.Slf4j;

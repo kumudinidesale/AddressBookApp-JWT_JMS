@@ -2,7 +2,7 @@ package com.example.addressbookapp1.service;
 
 import com.example.addressbookapp1.dto.AddressBookDTO;
 
-import com.example.addressbookapp1.exception.AddresssBookException;
+import com.example.addressbookapp1.model.exception.AddresssBookException;
 import com.example.addressbookapp1.model.AddressBook;
 import com.example.addressbookapp1.repository.AddressBookRepository;
 import com.example.addressbookapp1.util.EmailSenderService;

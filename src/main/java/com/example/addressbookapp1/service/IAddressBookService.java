@@ -9,7 +9,11 @@ import java.util.List;
 public interface IAddressBookService {
 
     //save data to repository
-    String createAddressBookData(AddressBookDTO addressBookDTO);
+    AddressBook createAddressBookData(AddressBookDTO addressBookDTO);
+
+    AddressBook getDataById(Integer id);
+
+
 
     //get All Data from token
     List<AddressBook> getAddressBookDataByToken(String token);
@@ -26,5 +30,17 @@ public interface IAddressBookService {
 
     //deleted records by token
     AddressBook deleteRecordByToken(String token);
+
+    AddressBook updateDataById(Integer id, AddressBookDTO employeeDTO);
+
+    String deleteDataById(Integer id);
+
+    List<AddressBook> getAddressBookData();
+
+    List<AddressBook> sortCityAscOrder();
+
+    //list of book in descending order
+    List<AddressBook> sortCityDescOrder();
+
 }
 

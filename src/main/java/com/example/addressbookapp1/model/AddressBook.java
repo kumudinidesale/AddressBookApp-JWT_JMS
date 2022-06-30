@@ -14,12 +14,11 @@ import javax.persistence.Table;
 public class AddressBook {
     @Id
     @GeneratedValue
-    private Integer id;
+    private int id;
 
-    private String firstName;
-    private String lastName;
+    private String fullName;
 
-    private String email;
+
 
     private String address;
     private String phoneNumber;
@@ -29,15 +28,14 @@ public class AddressBook {
 
 
     public AddressBook() {
-        super();
+
     }
 // Created constructor for post address method
 
     public AddressBook(AddressBookDTO addressBookDTO) {
         super();
-        this.firstName = addressBookDTO.getFirstName();
-        this.lastName = addressBookDTO.getLastName();
-        this.email= addressBookDTO.getEmail();
+        this.fullName = addressBookDTO.getFullName();
+
         this.address = addressBookDTO.getAddress();
         this.phoneNumber = addressBookDTO.getPhoneNumber();
         this.city = addressBookDTO.getCity();
@@ -46,83 +44,14 @@ public class AddressBook {
     }
 
     //Created constructor for update by id method
-    public AddressBook(Integer id, AddressBookDTO addressBookDTO) {
-        this.id = id;
-        this.firstName = addressBookDTO.getFirstName();
-        this.lastName = addressBookDTO.getLastName();
-        this.email = addressBookDTO.getEmail();
+    public void updateAddressBook( AddressBookDTO addressBookDTO) {
+
+        this.fullName = addressBookDTO.getFullName();
+
         this.address = addressBookDTO.getAddress();
         this.phoneNumber = addressBookDTO.getPhoneNumber();
         this.city = addressBookDTO.getCity();
         this.state = addressBookDTO.getState();
         this.zip = addressBookDTO.getZip();
-
-
     }
-
-
-
-//    public Integer getId() {
-//        return id;
-//    }
-//
-//    public void setId(Integer id) {
-//        this.id = id;
-//    }
-//
-//    public String getFirstName() {
-//        return firstName;
-//    }
-//
-//    public void setFirstName(String firstName) {
-//        this.firstName = firstName;
-//    }
-//
-//    public String getLastName() {
-//        return lastName;
-//    }
-//
-//    public void setLastName(String lastName) {
-//        this.lastName = lastName;
-//    }
-//
-//    public String getAddress() {
-//        return address;
-//    }
-//
-//    public void setAddress(String email) {
-//        this.address = email;
-//    }
-//
-//    public String getPhoneNumber() {
-//        return phoneNumber;
-//    }
-//
-//    public void setPhoneNumber(String phoneNumber) {
-//        this.phoneNumber = phoneNumber;
-//    }
-//
-//    public String getCity() {
-//        return city;
-//    }
-//
-//    public void setCity(String city) {
-//        this.city = city;
-//    }
-//
-//    public String getState() {
-//        return state;
-//    }
-//
-//    public void setState(String state) {
-//        this.state = state;
-//    }
-//
-//    public Integer getZip() {
-//        return zip;
-//    }
-//
-//    public void setZip(Integer zip) {
-//        this.zip = zip;
-//    }
 }

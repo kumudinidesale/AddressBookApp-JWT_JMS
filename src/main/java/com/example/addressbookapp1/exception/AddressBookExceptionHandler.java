@@ -1,4 +1,4 @@
-package com.example.addressbookapp1.model.exception;
+package com.example.addressbookapp1.exception;
 
 import com.example.addressbookapp1.dto.ResponseDTO;
 import org.springframework.http.HttpStatus;
